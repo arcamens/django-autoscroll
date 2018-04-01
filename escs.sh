@@ -91,12 +91,12 @@ for ind in data:
 wget -qO- https://toolbelt.heroku.com/install.sh | sh
 heroku login
 echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.bashrc
-heroku git:remote -a heroku git:remote -a philosophy-quotes
+heroku git:remote -a philosophy-quotes
 
 heroku config:set DISABLE_COLLECTSTATIC=1
 
 git add .
-git commit -am "First deplyment."
+git commit -a
 git push heroku master
 
 
