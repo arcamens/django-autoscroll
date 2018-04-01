@@ -76,25 +76,27 @@ tee >(python manage.py shell --settings=quotes.settings)
 filename = '/home/tau/projects/django-autoscroll-code/demo/quotes.txt'
 fd = open(filename, 'r', errors='replace')
 data = fd.read()
-data = data.split('\n')
 
 from core_app.models import Quote
+from re import split
+data = split('\n+', data)
+data[0]
 
 for ind in data:
     Quote.objects.create(data=ind)
+
 ##############################################################################
 # deploy on heroku.
 
 wget -qO- https://toolbelt.heroku.com/install.sh | sh
 heroku login
 echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.bashrc
-heroku git:remote -a dry-earth-24871
+heroku git:remote -a heroku git:remote -a philosophy-quotes
+
+heroku config:set DISABLE_COLLECTSTATIC=1
 
 git add .
 git commit -am "First deplyment."
 git push heroku master
-
-
-
 
 

@@ -15,6 +15,8 @@ class QuotePaginator(View):
     def get(self, request):
         quotes = models.Quote.objects.all()
         quotes = quotes.order_by('id')
+
+        # Assume pages are 30 elements long.
         paginator = Paginator(quotes, 30)
         page      = paginator.page(request.GET['page'])
 
