@@ -124,5 +124,7 @@ altogether with your paginator view. After that everything should work out of th
 
 The demo/quotes app is deployed on heroku, you can check it at:
 
+https://philosophy-quotes.herokuapp.com/
+
 **Note:** The escs.sh file contains code used for setting up the project.
 
