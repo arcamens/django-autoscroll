@@ -8,10 +8,11 @@ setup(name="django-autoscroll",
       packages=["autoscroll", 'autoscroll.templatetags'],
       author="Iury O. G. Figueiredo",
       author_email="ioliveira@id.uff.br",
-      url='',
-      download_url='',
-      keywords=[],
+      url='https://github.com/iogf/django-autoscroll',
+      download_url='https://github.com/iogf/django-autoscroll',
+      keywords=['django', 'autoscroll', 'scrolling'],
       classifiers=[])
+
 
 
 

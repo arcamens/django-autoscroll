@@ -98,5 +98,10 @@ heroku config:set DISABLE_COLLECTSTATIC=1
 git add .
 git commit -a
 git push heroku master
+##############################################################################
+# put on pip.
+
+python setup.py sdist register upload
+rm -fr dist
 
 
