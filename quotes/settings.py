@@ -25,7 +25,7 @@ SECRET_KEY = '!3fwr9vnf+_@hx9-kki+zhp9ttjzuj1y7)+6it+lrfb*zk^czm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', 'philosophy-quotes.herokuapp.com']
 
 
 # Application definition
@@ -121,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
 
 
 
