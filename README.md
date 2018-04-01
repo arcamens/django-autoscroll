@@ -10,7 +10,7 @@ pip install django-autoscroll
 
 # Usage
 
-The django-scroll app demands you to be using jquery, it does pagination for div elements using jquery requests.
+The django-autoscroll app demands you to be using jquery, it does pagination for div elements using jquery requests.
 It as well demands you to have some framework like bootstrap that allows scrollable div elements.
 First you have to define a paginator view.
 
