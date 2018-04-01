@@ -19,5 +19,8 @@ from django.conf.urls import url, include
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
      url(r'^core_app/', include('core_app.urls', namespace='core_app')), 
+    url(r'^$', RedirectView.as_view(pattern_name='core_app:index')),
+
 ]
+
 
