@@ -1,5 +1,0 @@
-django==1.11
-django-autoscroll
-gunicorn
-django-blowdb
-
